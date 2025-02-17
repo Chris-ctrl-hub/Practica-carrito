@@ -1,0 +1,246 @@
+body {
+    background-color: white;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+p {
+    justify-self: center; 
+}
+
+header button {
+    background-color: white;
+    border: none;
+    position: relative;
+}
+
+
+#absolute {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    display: none;
+}
+
+.menu {
+    display: block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px;
+    border-color: rgb(209, 209, 209);
+    border-style: solid;
+    border-bottom: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.header2 {
+    position: static;
+    z-index: -1;
+}
+
+
+header img {
+    padding: 10px;
+}
+
+.logo {
+    padding-left: 5%;
+    width: 200px;
+    height: auto;
+}
+
+.popup {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10; 
+    position: fixed; 
+    width: 60%;
+    min-width: 250px;
+    max-width: 615px;
+    height: auto;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.popup img {
+    min-width: 50%;
+    width: 50%;
+    height: auto;
+}
+
+.popup .logo {
+    justify-self: center;
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.popup div {
+    padding: 1.5vw;
+    width: 100%;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.popup p {
+    justify-self: start;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.popup button {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    border-radius: 20px;
+    display: block;
+    background-color: black;
+    color: white;
+    justify-self: center;
+    padding: 8px;
+    text-decoration: none;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    transition-duration: 1s;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.popup button:hover {
+    background-color: white;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+#banner {
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease-in-out;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container div {
+    font-size: 15px;
+    width: 20%;
+    min-width: 160px;
+    height: auto;
+    margin: 10px;
+}
+
+.container div img{
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); 
+    transition: 1s;
+    width: 100%;
+    height: auto;
+}
+
+.container div img:hover{
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.mas_productos {
+    display: block;
+    background-color: black;
+    color: white;
+    justify-self: center;
+    font-size: 15px;
+    padding: 10px;
+    text-decoration: none;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    transition-duration: 1s;
+}
+
+.mas_productos:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    min-height: 150px;
+    background-color: rgb(255, 244, 231);
+    font-size: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer div{
+    min-width: 150px;
+    margin: 20px;
+}
+
+footer p{
+    text-align: start;
+    justify-self: start;
+}
+
+footer a{
+    display: block;
+    justify-self: start;
+    text-align: start;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media screen and (max-width: 450px) {
+     header img {
+        padding: 0px;
+    }
+
+    .logo {
+        padding-left: 5%;
+        width: 150px;
+        height: auto;
+    }
+
+    .popup button {
+        margin-top: 0px;
+    }
+
+    .logo {
+        padding-left: 5%;
+        width: 150px;
+        height: auto;
+    }
+}

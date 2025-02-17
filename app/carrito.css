@@ -1,0 +1,269 @@
+body {
+    background-color: rgb(248, 248, 248);
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+header button {
+    background-color: white;
+    border: none;
+    position: relative;
+}
+
+
+#absolute {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    display: none;
+}
+
+.menu {
+    display: block;
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px;
+    border-color: rgb(209, 209, 209);
+    border-style: solid;
+    border-bottom: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.header2 {
+    position: static;
+    z-index: -1;
+}
+
+
+header img {
+    padding: 10px;
+}
+
+.logo {
+    padding-left: 5%;
+    width: 200px;
+    height: auto;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+    gap: 20px;
+    margin: 20px;
+}
+
+#cart_container {
+    height: auto;
+    width: 100%;
+    gap: 20px;
+}
+
+#cart_container img {
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: auto;
+    width: 110px;
+    min-width: 110px;
+    object-fit: cover;
+}
+
+#cart_container button {
+    height: 30px;
+    width: 30px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    transition-duration: 1s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+}
+
+#cart_container p {
+    margin: 0px;
+    margin-left: 10px;
+    font-size: clamp(0.8rem, 2.0vw, 1.5rem);
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+
+#container_content {
+    justify-self: center;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cart_buttons {
+    display: flex;
+    align-self: flex-end;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+#cart_container #cart_quantity {
+    height: 20px;
+    width: 20px;
+    align-self: center;
+    text-align: center;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+#order_panel {
+    position: sticky;
+    font-size: 20px;
+    height: 400px;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.popup {
+        gap: 10px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        z-index: 10; 
+        position: fixed; 
+        width: 60%;
+        padding: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        max-height: 80vh;
+}
+
+.popup_Content {
+    justify-self: center;
+    min-height: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.popup_Content img {
+    padding: 0%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: auto;
+    width: 80px;
+    min-width: 85px;
+    object-fit: cover;
+}
+
+.popup .logo {
+    width: 60%;
+    height: auto;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.popup div {
+    width: 100%;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.popup p {
+    justify-self: start;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.popup button {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    border-radius: 20px;
+    display: block;
+    background-color: black;
+    color: white;
+    justify-self: center;
+    padding: 8px;
+    text-decoration: none;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    transition-duration: 1s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.popup button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+@media screen and (max-width: 450px) {
+    header img {
+       padding: 0px;
+   }
+
+   #order_panel {
+    width: 100%;
+    box-sizing: border-box;
+   }
+
+   article {
+    flex-direction: column;
+   }
+
+   .logo {
+       padding-left: 5%;
+       width: 150px;
+       height: auto;
+   }
+}
+
+@media screen and (max-width: 530px) {
+   .inicio {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+   }
+}
