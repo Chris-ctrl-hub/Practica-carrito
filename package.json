@@ -15,6 +15,7 @@
     "express-jwt": "^8.5.1",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^4.0.0",
-    "mongoose": "^6.2.8"
+    "mongoose": "^6.2.8",
+    "bcryptjs": "^2.4.3"
   }
 }
