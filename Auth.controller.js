@@ -1,7 +1,7 @@
 const express = require("express")
 require('dotenv').config();
 const mongoose = require("mongoose")
-const bcrypt = require("bcryptjs")
+const bcryptjs = require("bcryptjs")
 const jwt = require('jsonwebtoken')
 const { expressjwt } = require('express-jwt');
 
@@ -37,7 +37,7 @@ const auth = {
                 res.status(401).send("usuario invalido")
             }
             else {
-                const ismatch = await bcrypt.compare(body.password, user.password)
+                const ismatch = await bcryptjs.compare(body.password, user.password)
                 if (ismatch) {
                     const signed = signToken(user._id)
                     res.status(200).json({
@@ -63,8 +63,8 @@ const auth = {
                 res.send("Usuario ya creado")
             } 
             else {
-                    const salt = await bcrypt.genSalt()
-                    const hashed = await bcrypt.hash(body.password, salt)
+                    const salt = await bcryptjs.genSalt()
+                    const hashed = await bcryptjs.hash(body.password, salt)
                     const user = await User.create({ email: body.email, password: hashed, salt})
                     const signed = signToken(user._id)
                     res.status(200).json({
